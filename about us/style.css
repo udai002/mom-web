@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.about-nav {
+    height: 50px;
+    background-color: rgb(44, 51, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logos{
+    flex-shrink: 0;
+
+}
+.logo{
+    height: 40px;
+    width: auto;
+}
+.about-nav ul {
+    display: flex;
+    justify-content:space-around;
+     
+}
+
+.about-nav li {
+    list-style-type: none;
+}
+
+.about-nav a {
+    text-decoration: none;
+    color: white; 
+    padding: 10px; 
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6%;  
+}
+.card{
+    width: 28%;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    border-radius: 15px;
+    height: auto;
+    margin: -20px;
+       
+}
+.why{
+    padding-top: 50px;
+}
+.heading{
+    text-align: center;
+}
+.detail{
+    text-align: center;
+}
+.image{
+    width: 80px;
+    height: 90px;
+    padding: 5px;
+    background-color: bisque;
+    border-bottom-right-radius: 20px;
+}
+.container{
+    margin-left: 20px;
+
+}
+.about-a{
+    color: white;
+}
+.about-a:hover{
+    background-color: rgb(249, 249, 250);
+    color:black;
+    border-radius: 30px;
+}
+.about-inner{
+    background-color: blueviolet;
+    display: flex;
+    padding: 2%;
+    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+    color:white;
+}
+.heads{
+    margin-bottom: -10px;
+}
+
