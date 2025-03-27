@@ -1,49 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mom Pharmacy</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
+    <style>
+        .navbar {
+            background-color: #abf1e7;
+            align-items: center;
+            overflow: hidden;
+            padding: 10px 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .login button {
+            margin-right: 60px;
+            padding: 10px 20px;
+            background-color: #42d347;
+            border: none;
+            border-radius: 50px;
+        }
+
+        .nav-items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .items {
+            display: flex;
+            background-color: white;
+            box-shadow: 5px 10px 18px #888888;
+            border: 1px gray;
+            border-radius: 12px;
+            position: absolute;
+            margin: auto;
+        }
+
+        .navbar .items a:hover {
+            background-color: #f4f2f2;
+        }
+
+        .logo {
+            /* margin-left: 30px; */
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .logoname {
+            position: absolute;
+            margin-left: 70px;
+            color: #00a89d;
+        }
+        .navbar .items a{
+            color: #010a09;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        .logoname{
+            position:absolute;
+            margin-left: 70px;
+            color:#00a89d;
+        }
+
+    </style>
 </head>
+
 <body>
     <div>
-        <div class="contact-navbar-container">
-            <div class="contact-aligment">
-                <div class="contact-logo-container">
-                    <img src="https://media.licdn.com/dms/image/v2/D560BAQF7Fb8fcX1BqQ/company-logo_200_200/company-logo_200_200/0/1737746757132/mompharmacy_logo?e=1748476800&v=beta&t=sKNcH0o9Zrkd_5LHoU-3kI2fVT2BTXbdK9ePE1C1Ek4" alt="momPharmacy" class="contact-logo">
-                </div>
-                <ul class="contact-inner-navbar">
-                    <li class="contact-navbar-items"><a class="link" href="/mom-web/">Home</a></li>
-                    <li class="contact-navbar-items"><a class="link" href="/mom-web/about us/about.html">about</a></li>
-                    <li class="contact-navbar-items"><a class="link" href="/mom-web/about us/whyto.html">Why to chose us</a></li>
-                    <li class="contact-navbar-items"><a class="link"  href="/mom-web/contact.html"></a>Contact us</li>
-                </ul>
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Mom Pharmacy Logo" style="width: 50px; height: auto;">
+                <a class="logoname">
+                    <h3>Mom Pharmacy</h3>
+                </a>
             </div>
-            <div class="contact-login-btn-container">
-                <button class="contact-login-btn">Login</button>
+            <div class="nav-items">
+                <div class="items">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Why to choose us</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="login">
+                <button onclick="openLoginModal()">Login</button>
             </div>
         </div>
-        <div class="contact-section1">
+        </div>
+        <div class="contact-section1" style="background-color: #abf1e7;">
             <div class="contact-section1-form">
                 <div class="contact-form-container">
                     <h1 class="contact-heading">Contact Us</h1>
-                    <p class="contact-paragraph">Got questions or feeling under the weather? 
+                    <p class="contact-paragraph">Got questions or feeling under the weather?
 
                         <!-- We’ve got your back! Whether it’s about your order, a weird side effect, or just needing someone to say ‘take two and call us in the morning’ — we’re here for you. Drop us a message and let the healing begin -->
-                         We are here and got your back , it's about your order , feel weird or just need an assistant let talk a time and discuss about that
+                        We are here and got your back , it's about your order , feel weird or just need an assistant let
+                        talk a time and discuss about that
                     </p>
                     <p class="contact-paragraph">
                         we are here to help you and assist your with our cool team and figure out about problem as ours
-                        We’re here to help! Whether it’s about your order, a missing pill, or just figuring out which vitamin actually works reach out! We promise to respond faster than your meds kick in.
+                        We’re here to help! Whether it’s about your order, a missing pill, or just figuring out which
+                        vitamin actually works reach out! We promise to respond faster than your meds kick in.
                     </p>
                 </div>
                 <div class="contact-form-main-container">
-                    <form class="contact-form" action="mailto:karumuriudaisai002@gmail.com" method="POST" enctype="text/plain">
+                    <form class="contact-form" action="mailto:karumuriudaisai002@gmail.com" method="POST"
+                        enctype="text/plain">
                         <h1 class="contact-heading">Contact Form</h1>
                         <div class="contact-input-container">
-                            <label for="name" class="contact-input-label">Name? <br> (Not your Instagram ID)</label> <br>
+                            <label for="name" class="contact-input-label">Name? <br> (Not your Instagram ID)</label>
+                            <br>
                             <input type="text" name="name" class="contact-input" id="name" required>
                         </div>
                         <div class="contact-input-container">
@@ -52,7 +131,8 @@
                         </div>
                         <div class="contact-input-container">
                             <label for="description" class="contact-input-label">what's in your mind</label> <br>
-                            <textarea name="description" id="description" class="contact-input" rows=6 required></textarea>
+                            <textarea name="description" id="description" class="contact-input" rows=6
+                                required></textarea>
                         </div>
                         <div class="contact-submit-btn-container">
                             <button class="contact-form-btn" type="submit">Submit</button>
@@ -67,50 +147,60 @@
             <footer>
 
 
-                <h2 style="text-align: center; color: rgb(0, 0, 0); padding-top: 20px; padding-bottom: 20px;">Mom Pharmacy</h2>
-                    <div class="Footer_cointainer">
+
+                <div class="Footer_cointainer">
+                    <ul class="Footer_data">
+                        <h2 style="text-align: left; color: rgb(255, 255, 255);  padding-bottom: 20px;">Mom Pharmacy
+                        </h2>
                         <img src="https://media.licdn.com/dms/image/v2/D560BAQF7Fb8fcX1BqQ/company-logo_100_100/company-logo_100_100/0/1737746757132/mompharmacy_logo?e=1748476800&v=beta&t=UyFX9HuglfxkxTMM3JVFX6tVOnLjnW7aTwgQ7R72lgE"
                             alt="image.jpg">
-                        <div class="Footer_first">
-                            <ul class="Footer_data">
-                                <li>Company</li>
-                                <li>About Us</li>
-                                <li>Carrers</li>
-                                <li>Blog</li>
-                            </ul>
-                        </div>
-                        <div class="Footer_First">
-                            <ul class="Footer_data">
-                                <li>Our Services</li>
-                                <li>Our Medicine</li>
-                                <li>Order Medicine</li>
-                                <li>Lab Tests</li>
-                                <li>Find Nearest Store</li>
-                            </ul>
-                        </div>
-                        <div class="Address">
-                            <ul class="Footer_data">
-                                <li>
-                                    <h3>Address</h3>
-                                    <p>Building No:79 <br> Madhapur ,Hydrabad</p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="icon">
-                            <ul class="Footer_data">
-                                <li>
-                                    <a href="#" class="fa fa-facebook"></a>
-                                    <a href="#" class="fa fa-instagram"></a>
-                                    <a href="#" class="fa fa-linkedin"></a>
-                                    <a href="#" class="fa fa-twitter"></a>
-                                </li>
-                            </ul>
-                        </div>
+                        <p style="color: white; text-align: left; padding-top: 20px;">Your trusted partner in healthcare
+                            delivery,<br> combining technology with care.</p>
+                    </ul>
+                    <div class="Footer_First">
+                        <h3>Quick Links</h3>
+                        <ul class="Footer_data">
+
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Medicine</li>
+                            <li>Contact</li>
+                            <li>Find Nearest Store</li>
+                        </ul>
                     </div>
-                    <p style="text-align: center; padding-bottom: 10px; padding-top: 10px; background-color: rgb(79, 71, 71); color: white;">© Copyright 2025 momPharmacy</p>
+                    <div class="Footer_First">
+                        <h3>Contact Us</h3>
+                        <ul class="Footer_data">
+
+                            <li><a href="tel:+4733378901"
+                                    style="text-decoration: none; color:rgba(255, 255, 255, 0.729) ;">+91 77020
+                                    68334</a></li>
+                            <li>Email Us: Ps@mompharmacy.in</li>
+                            <li>Building No:79 <br> Madhapur ,Hydrabad</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <h3>Follow Us</h3>
+                        <ul class="Footer_data">
+                            <li>
+                                <a href="https://www.linkedin.com/company/mompharmacy/posts/?feedView=all"
+                                    class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p
+                    style="text-align: center; padding-bottom: 10px; padding-top: 10px; background-color: rgb(79, 71, 71); color: white;">
+                    © Copyright 2025 momPharmacy</p>
 
             </footer>
         </div>
     </div>
 </body>
+
 </html>
