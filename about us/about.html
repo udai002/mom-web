@@ -1,51 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="about-nav">
-        <div class="logos">
-            <img src="./image/mompharmacy_logo-removebg-preview.png" alt="Logo" class="logo">
-        </div>
-        
-        <ul>
-            <li style="list-style-type: none;" ><a href="/mom-web/index.html" style="text-decoration: none;" class="about-a">Home</a></li>
-            <li style="list-style-type: none;" ><a href="./about.html" style="text-decoration: none;" class="about-a" >Abou Us</a></li>
-            <li style="list-style-type: none;" ><a href="./whyto.html" style="text-decoration: none;" class="about-a">Why to choose us</a></li>
-            <li style="list-style-type: none;" ><a href="/mom-web/contact.html" style="text-decoration: none;" class="about-a">Contact us </a></li>
-        </ul>
-    </nav>
-    <br/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  </head>
+  <body>
+    <div class="navbar"> 
+      <div class="logo">
+          <img src="./image/mompharmacy_logo-removebg-preview.png" alt="Mom Pharmacy Logo" style="width: 50px; height: auto;"></a> 
+      </div>
+      <div class="items">
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="whyto.html">Why to choose us</a>
+      <a href="#">Contact us</a>
+      </div>
+      <div class="login">
+      <button onclick="openLoginModal()">Login</button>
+      </div>
+  </div>
     <div class="about-inner">
-        <div>
-            <h1>About Us</h1>
+      <div class="about-para">
+        <h1 style="color: #00a99d">About Us</h1>
 
+        <p>
+          Sick of waiting for your medicines? We get it! At Mom harmacy, we
+          bring speed, convenience, and care straight to your doorstep—in
+          minutes! No more long queues or last-minute pharmacy runs. Just tap,
+          order, and relax. We’ve got you covered!
+        </p>
 
-            <p>we are dedicated to providing high-quality healthcare solutions with a personal touch. Our mission is to ensure that every customer receives the best medical products, expert advice, and compassionate service—just like a mother’s care.
-                
-               <br/><br/> With a strong commitment to health and well-being, we offer a wide range of prescription and over-the-counter medications, wellness products, and healthcare essentials. Our knowledgeable pharmacists are always available to guide you with trusted advice, ensuring your safety and satisfaction.
-                <br/>
-                <br/>
-                At Mom Pharmacy, we believe in:
-                <br/>
-                ✅ Quality & Trust – We source only the best and most reliable medications.
-                <br/>
-
-                ✅ Customer Care – Your health is our priority, and we provide personalized service.
-                <br/>
-                ✅ Convenience & Accessibility – With easy online ordering and home delivery options, we make healthcare hassle-free.
-                
-                Whether you need daily medications, wellness supplements, or expert guidance, Mom Pharmacy is here for you—just like family.
-                <br/><br/>
-                📍 Visit us today and experience healthcare with care!</p>
-        </div>
-        <div>
-            <img src="./image/bg ren.png" alt="">
-        </div>
+        <p style="margin: 1%;">
+          we are dedicated to providing high-quality healthcare solutions with a
+          personal touch. Our mission is to ensure that every customer receives
+          the best medical products, expert advice, and compassionate
+          service—just like a mother’s care.<br />
+          
+            With a strong commitment to health and well-being, we offer a wide
+          range of prescription and over-the-counter medications, wellness
+          products, and healthcare essentials. Our knowledgeable pharmacists are
+          always available to guide you with trusted advice, ensuring your
+          safety and satisfaction.
+          <br /><br />
+          <b>At Mom Pharmacy, we believe in:</b><br />
+          <br />
+          Quality & Trust : We source only the
+          best and most reliable medications.
+          <br /><br/>
+           Blazing-Fast Delivery : Your meds at your door before you know it!
+          <br /><br />
+           Genuine & Affordable : Quality medicines at prices that won’t break
+          the bank.<br /><br />
+           Customer Care : Your health is our priority, and we
+          provide personalized service.<br />
+          <br />
+          Easy Ordering : A few taps, and boom—your meds are on
+          the way! <br /><br />
+           Convenience & Accessibility : With easy online ordering and home
+          delivery options, we make healthcare hassle-free. Whether you need
+          daily medications, wellness supplements, or expert guidance, Mom
+          Pharmacy is here for you—just like family.
+          <br /><br />
+           Visit us today and experience healthcare with care!
+        </p>
+      </div>
+      <div class="about-para-img">
+        <img src="./image/bg ren.png" />
+      </div>
     </div>
-</body>
+    <!-- footer  -->
+
+    <div class="">
+      <footer>
+
+
+          
+              <div class="Footer_cointainer">
+                  <ul class="Footer_data">
+                  <h2 style="text-align: left; color: rgb(255, 255, 255);  padding-bottom: 20px;">Mom Pharmacy</h2>
+                  <img src="./image/mompharmacy_logo-removebg-preview.png"
+                      alt="image.jpg" >
+                  <p style="color: white; text-align: left; padding-top: 20px;">Your trusted partner in healthcare delivery,<br> combining technology with care.</p>    
+                  </ul>
+                  <div class="Footer_First">
+                      <h3 >Quick Links</h3>
+                      <ul class="Footer_data">
+                          
+                          <li id="ab"> <a ref="about us/about.html" style="color: aliceblue; text-decoration: none;"  >About Us</a></li>
+                          <li >Services</li>
+                          <li >Medicine</li>
+                          <li id="ab"><a href="contact.html" style="color: aliceblue; text-decoration: none;" >Contact</a></li>
+                          <li >Find Nearest Store</li>
+                      </ul>
+                  </div>
+                  <div class="Footer_First">
+                      <h3>Contact Us</h3>
+                      <ul class="Footer_data">
+                          
+                          <li><a href="tel:+4733378901" style="text-decoration: none; color:rgba(255, 255, 255, 0.729) ;">+91 77020 68334</a></li>
+                          <li>Email Us: Ps@mompharmacy.in</li>
+                          <li>Building No:79 <br> Madhapur ,Hydrabad</li>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="icon">
+                      <h3>Follow Us</h3>
+                      <ul class="Footer_data">
+                          <li>
+                              <a href="https://www.linkedin.com/company/mompharmacy/posts/?feedView=all" class="fa fa-linkedin"></a>
+                              <a href="#" class="fa fa-facebook"></a>
+                              <a href="#" class="fa fa-instagram"></a>
+                              
+                              <a href="#" class="fa fa-twitter"></a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <p style="text-align: center; padding-bottom: 10px; padding-top: 10px; background-color: rgb(79, 71, 71); color: white;">© Copyright 2025 momPharmacy</p>
+
+      </footer>
+    <script
+      src="https://kit.fontawesome.com/YOUR-KIT-ID.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
