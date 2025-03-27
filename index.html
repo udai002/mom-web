@@ -1,83 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mom Pharmacy</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('background.jpeg') no-repeat center center fixed;
-            background-size: cover;
-        }
-        header {
-            background-color: #d6dddc;
-            color: #2B9583;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        main {
-            padding: 20px;
-        }
+    <title>Pharmacy Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        .upload-section {
-            margin: 20px 0;
-            text-align: center;
-        }
-        .upload-section input[type="file"] {
-            display: none;
-        }
-        .upload-section label {
-            background-color: #2B9583;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .upload-section label:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
+
 <body>
-    <header>
-        <img src="logo.png" alt="Mom Pharmacy Logo" style="width: 100px; height: auto;">
-        <h1>Welcome to Mom Pharmacy</h1>
-    </header>
-    <nav>
-        <a href="/mom-web">Home</a>
-        <a href="/mom-web/about us/about">About Us</a>
-        <a href="/mom-web/about us/whyto">Why to choose us</a>
-        <a href="/mom-web/contact">Contact Us</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>Your Health, Delivered in 10 Minutes</h2>
-            <p>Fast, reliable, and hassle-free medicine delivery right to your doorstep. Get authentic medicines in just minutes—because your health can't wait! 🚀💊</p>
-        </section>
-        <section class="upload-section">
-            <label for="prescription-upload">Upload Prescription</label>
-            <input type="file" id="prescription-upload" name="prescription" accept=".jpg,.jpeg,.png,.pdf">
-            <p>Upload your prescription to get started with your order.</p>
-        </section>
-    </main>
+    <div class="bg">
+    <div class="navbar"> 
+        <div class="logo">
+            <img src="logo.png" alt="Mom Pharmacy Logo" style="width: 50px; height: auto;">
+            <a class="logoname"><h3>Mom Pharmacy</h3></a>
+        </div>
+        <div class="nav-items">
+            <div class="items">
+                <a href="/mom-web/index.html">Home</a>
+                <a href="#">About</a>
+                <a href="#">Why to choose us</a>
+                <a href="/mom-web/contact">Contact us</a>
+            </div>
+        </div>
+        <div class="login">
+        <button onclick="openLoginModal()">Login</button>
+        </div>
+    </div>
+    <div class="flexy">
+    <div>
+    <div class="textdetails">
+        <h1 class="heads">
+            Bringing Healthcare Closer to You
+        </h1>
+        <p class="tails">Order with Ease, Relax with Confidence, Heal with Care!</p>
+    </div>
+    <div class="searchbar">
+        <input placeholder="Search for medicine and generals" class="search" />
+        <button id="btn" class="search-button" onclick="toggleForm()">Upload Prescription</button>
+    </div>
+    </div>
+    <div class="flexy2">
+        <img src="back.png" class="images"/>
+    </div>
+
+
+</div>
+
+    
+
+
+
+    <div class="card-container">
+        <div class="card">
+            <div class="icon bg-blue"><i class="fa-solid fa-vial-virus"></i></div>
+            <div class="card-text">
+                <h3>Lab Tests</h3>
+                <p>Get all types of tests with in minutes.</p>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="icon bg-red"><i class="fas fa-pills"></i></div>
+            <div class="card-text">
+                <h3>Medicine</h3>
+                <p>Get your prescriptions delivered at your doorstep.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon bg-green"><i class="fas fa-apple-alt"></i></div>
+            <div class="card-text">
+                <h3>Home Care</h3>
+                <p>Get home care personalized treatments at your doorstep.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="icon bg-orange"><i class="fas fa-stethoscope"></i></div>
+            <div class="card-text">
+                <h3>Doctor Consultation</h3>
+                <p>Book online consultations with top doctors.</p>
+            </div>
+        </div>
+
+        
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    
+        <footer>
+                <div class="Footer_cointainer">
+                    <ul class="Footer_data">
+                    <h2 style="text-align: left; color: rgb(255, 255, 255);  padding-bottom: 20px;">Mom Pharmacy</h2>
+                    <img src="logo.png"
+                        alt="image.jpg" >
+                    <p style="color: white; text-align: left; padding-top: 20px;">Your trusted partner in healthcare delivery,<br> combining technology with care.</p>    
+                    </ul>
+                    <div class="Footer_First">
+                        <h3 >Quick Links</h3>
+                        <ul class="Footer_data">
+                            
+                            <li id="ab"> <a ref="about us/about.html" style="color: aliceblue; text-decoration: none;"  >About Us</a></li>
+                            <li >Services</li>
+                            <li >Medicine</li>
+                            <li id="ab"><a href="contact.html" style="color: aliceblue; text-decoration: none;" >Contact</a></li>
+                            <li >Find Nearest Store</li>
+                        </ul>
+                    </div>
+                    <div class="Footer_First">
+                        <h3>Contact Us</h3>
+                        <ul class="Footer_data">
+                            
+                            <li><a href="tel:+4733378901" style="text-decoration: none; color:rgba(255, 255, 255, 0.729) ;">+91 77020 68334</a></li>
+                            <li>Email Us: Ps@mompharmacy.in</li>
+                            <li>Building No:79 <br> Madhapur ,Hydrabad</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="icons">
+                        <h3>Follow Us</h3>
+                        <ul class="Footer_data">
+                            <li>
+                                <a href="https://www.linkedin.com/company/mompharmacy/posts/?feedView=all" class="fa fa-linkedin"></a>
+                                <a href="#" class="fa fa-facebook"></a>
+                                <a href="#" class="fa fa-instagram"></a>
+
+                                <a href="#" class="fa fa-twitter"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="text-align: center; padding-bottom: 10px; padding-top: 10px; background-color: rgb(79, 71, 71); color: white;">© Copyright 2025 momPharmacy</p>
+
+        </footer>
+
+</div>
+<div class="overlay" id="overlay" onclick="toggleForm()"></div>
+
+    <div id="formContainer"></div>
+
+    <script src="index.js"></script>
+
 </body>
+
 </html>
