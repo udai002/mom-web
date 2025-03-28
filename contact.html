@@ -7,6 +7,7 @@
     <title>Mom Pharmacy</title>
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         .navbar {
             background-color: #abf1e7;
@@ -74,7 +75,24 @@
             margin-left: 70px;
             color:#00a89d;
         }
+        .contact-list-container{
+            margin-top: 20px;
+            font-weight: 400;
+                }
 
+        .contact-list-container li{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+        }
+        .contact-list-container li i{
+            margin-right: 10px;
+            font-weight: bold;
+            color: #00a89d;
+            margin-top: 6px;
+        }
     </style>
 </head>
 
@@ -110,11 +128,11 @@
                         We are here and got your back , it's about your order , feel weird or just need an assistant let
                         talk a time and discuss about that
                     </p>
-                    <p class="contact-paragraph">
-                        we are here to help you and assist your with our cool team and figure out about problem as ours
-                        We’re here to help! Whether it’s about your order, a missing pill, or just figuring out which
-                        vitamin actually works reach out! We promise to respond faster than your meds kick in.
-                    </p>
+                    <ul class="contact-list-container">
+                        <li class="contact-items"><i class="fa-solid fa-envelope"></i>example@gmail.com</li>
+                        <li class="contact-items"><i class="fa-solid fa-phone"></i>9877583999383</li>
+                        <li class="contact-items"><i class="fa-solid fa-map-location-dot"></i> nagar, beside radha TMT, <br> Madhapur, Hyderabad , 521132</li>
+                    </ul>
                 </div>
                 <div class="contact-form-main-container">
                     <form class="contact-form" action="mailto:karumuriudaisai002@gmail.com" method="POST"
@@ -201,6 +219,8 @@
             </footer>
         </div>
     </div>
+    <script src="https://kit.fontawesome.com/c0128b9bb4.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
